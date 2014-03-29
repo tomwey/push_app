@@ -1,0 +1,26 @@
+<% content_for :sitemap do %>
+  <span class="current">推送信息</span>
+<% end %>
+
+<%= render_header_list("推送列表", "新建推送", "/notifications/new" ) %>
+
+<table class="table table-hover">
+  <tr>
+    <th>ID</th>
+    <th>推送内容</th>
+    <th>Badge</th>
+    <th>所属应用</th>
+    <th>推送时间</th>
+    <th></th>
+  </tr>
+
+<% @notis.each do |twit| %>
+  <tr>
+    <td><%= twit.id %></td>
+    <td><%= twit.content %></td>
+    <td><%= twit.badge %></td>
+    <td><%= twit.app_name %></td>
+    <td><%= l twit.created_at, :format => :short %></td>
+  </tr>
+<% end %>
+</table>

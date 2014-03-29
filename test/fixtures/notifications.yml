@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  app_id: 1
+  content: MyString
+  sound: MyString
+  badge: 1
+  is_debug: false
+
+two:
+  app_id: 1
+  content: MyString
+  sound: MyString
+  badge: 1
+  is_debug: false
